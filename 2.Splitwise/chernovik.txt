@@ -1,0 +1,64 @@
+
+class Home extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home 2Screen</Text>
+        <Button
+          title="Add friend"
+          onPress={() => this.props.navigation.navigate('AddFriend')}
+        />
+      </View>
+    );
+  }
+}
+
+class AddFriend extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Details Screen</Text>
+        <Button
+          title="Go to Home"
+          onPress={() => this.props.navigation.navigate('Home')}
+        />
+      </View>
+    );
+  }
+}
+
+renderFriendsList = () =>
+    this.state.friends.map(friend => (
+      <FlatList data={this.state.friends} 
+      renderItem={({friend}) => <Text>{friend.name}</Text>} 
+      />
+    ));
+
+
+
+class App1 extends Component {
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <Header />
+          <View style={{ flex: 8, backgroundColor: 'steelblue' }}>
+            <Balance />
+            <FriendsList />
+            <Button onClick={this.changeState} title="Add new friend" />
+          </View>
+      
+          
+      </View>
+    );
+  }
+}
+
+class Header extends Component {
+  render() {
+    return (
+      <View style={{ flex: 1, backgroundColor: 'powderblue' }}>
+        <Text style={styles.header}>Splitwise</Text>
+      </View>
+    );
+  }
+}
