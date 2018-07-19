@@ -1,0 +1,24 @@
+{
+  "name": "studentmustwork",
+  "version": "0.0.0",
+  "description": "No description",
+  "author": null,
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "dependencies": {
+    "expo": "^28.0.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
+    "apollo-boost": "0.1.10",
+    "apollo-client": "^2.2.3",
+    "fbjs": "*",
+    "graphql": "^0.13.0",
+    "graphql-tag": "2.9.2",
+    "react-apollo": "2.1.9",
+    "react-native-datepicker": "1.7.2",
+    "react-native-elements": "0.18.5",
+    "react-native-firebase": "4.3.7",
+    "react-native-paper": "1.11.0",
+    "react-navigation": "2.6.2"
+  }
+}
